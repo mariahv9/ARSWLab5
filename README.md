@@ -67,6 +67,8 @@ http://localhost:8080/index.html
 
 - Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
 
+![Imagen1](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/Front1.png)
+
 ## Parte III - Front-End - Lógica
 
 1. Ahora, va a crear un Módulo JavaScript que, a manera de controlador, mantenga los estados y ofrezca las operaciones requeridas por la vista. Para esto tenga en cuenta el [patrón Módulo de JavaScript](https://toddmotto.com/mastering-the-module-pattern/), y cree un módulo en la ruta static/js/app.js .
@@ -89,6 +91,7 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 6. Asocie la operación antes creada (la de app.js) al evento 'on-click' del botón de consulta de la página.
 7. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un cine existente, y una fecha en donde estén agendadas funciones, se cargue el listado de funciones del mismo.
     
+![Imagen 2](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/front2.png)
 ## Parte IV
 
 1. A la página, agregue un [elemento de tipo Canvas](https://www.w3schools.com/html/html5_canvas.asp), con su respectivo identificador. Haga que sus dimensiones no sean demasiado grandes para dejar espacio para los otros componentes, pero lo suficiente para poder visualizar cómodamente los asientos de la sala.
@@ -99,6 +102,9 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 5. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST. Para lo anterior revise [cómo hacer peticiones GET con jQuery](https://api.jquery.com/jquery.get/), y cómo se maneja el esquema de callbacks en este contexto.
 6. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 7. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
+
+![Imagen3](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/front3.png)
+![Imagen4](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/front4.png)
 
 ## Construido con 
 
