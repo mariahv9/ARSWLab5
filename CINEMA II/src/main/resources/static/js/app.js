@@ -66,8 +66,8 @@ app = (function () {
         var seats = functionToSeats[0].seats;
         var c = document.getElementById("canvas");
         var count = c.getContext("2d");
-        count.fillStyle = "black";
-        count.fillRect (140, 50, 500, 50);
+        count.fillStyle = "deepskyblue";
+        count.fillRect (140, 50, 600, 50);
         var d = document.getElementById("canvas");
         var dtx = d.getContext("2d");
         var sumPosition = 0;
@@ -75,7 +75,7 @@ app = (function () {
         for (var x = 0; x < seats[0].length; x++) {
             for (var y = 0; y < seats.length; y++) {
                 if(seats[y][x] == false){
-                    dtx.fillStyle = "blue";
+                    dtx.fillStyle = "firebrick";
                 } else{
                     dtx.fillStyle = "grey";
                 }
