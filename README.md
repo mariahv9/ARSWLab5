@@ -103,8 +103,8 @@ Junto con dos operaciones públicas, una que permita cambiar el nombre del cinem
 6. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 7. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
 
-![Imagen3](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/front3.png)
-![Imagen4](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/front4.png)
+![Imagen3](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/Front3.png)
+![Imagen4](https://github.com/mariahv9/ARSWLab5/blob/master/CINEMA%20II/img/Front4.png)
 
 ## Construido con 
 
