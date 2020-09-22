@@ -23,7 +23,7 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
         CinemaFunction funct2 = new CinemaFunction(new Movie("The Night","Horror"),functionDate);
         functions.add(funct1);
         functions.add(funct2);
-        Cinema c=new Cinema("cinemaX",functions);
+        Cinema c = new Cinema("cinemaX",functions);
         cinemas.put("cinemaX", c);
         //Creacion cinema 2
         String functionDate1 = "2020-12-18 20:30";
@@ -32,7 +32,7 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
         CinemaFunction funct22 = new CinemaFunction(new Movie("LEGO movie","Adventure"),functionDate1);
         functions1.add(funct12);
         functions1.add(funct22);
-        Cinema c2=new Cinema("cinePolis",functions1);
+        Cinema c2 = new Cinema("cinePolis",functions1);
         cinemas.put("cinePolis", c2);
     }    
 
