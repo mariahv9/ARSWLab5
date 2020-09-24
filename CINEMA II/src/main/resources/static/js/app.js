@@ -14,7 +14,7 @@ app = (function () {
     function getFunctionsByCinemaAndDate() {
         cinema = $("#cinema").val();
         dateF = $("#dateF").val();
-        api.getFunctionsByCinemaAndDate(cinema, dateF, changeData);
+        client.getFunctionsByCinemaAndDate(cinema, dateF, changeData);
     }
 
     function changeData(functions) {
@@ -22,16 +22,17 @@ app = (function () {
             var mapFunctions = functions.map(
             function (functions) {
                 var nameOfMovie = functions.movie.name;
-                var genderMovie = functions.movie.gener;
+                var generMovie = functions.movie.genre;
+                var date = functions.date.substring (0, 10);
                 var hourDate = functions.date.substring(11, 16);
-                return {movieName: nameOfMovie, gener: genderMovie, hour: hourDate};
+                return {movieName: nameOfMovie, gener: generMovie, hour: hourDate};
             })
         }
         setTable(mapFunctions);
     }
 
     function setTable(mapFunctions) {
-        clearTable(); 
+        clearTable();
         var table = document.getElementById("table");
         if (table.rows.length > 1) for(var i = table.rows.length - 1; i > 0; i--) {table.deleteRow(i);}
         $("#cinemaName").text("Function cinema selected: "+cinema);
@@ -51,7 +52,7 @@ app = (function () {
         var dateTarget = dateF.concat(" ",hour);
         $("#movieSelected").text("Availability of Functions: "+ movieName);
         $.getScript(module, function(){
-            api.getFunctionByNameAndDateAndMovieName(nameOfCinema,dateTarget,movieName,drawSeats);
+            client.getFunctionByNameAndDateAndMovieName(nameOfCinema,dateTarget,movieName,drawSeats);
         });
     }
 
@@ -63,7 +64,7 @@ app = (function () {
     }
 
     function drawSeats(functionToSeats) {
-        var seats = functionToSeats[0].seats;
+        var seats = functionToSeats.seats;
         var c = document.getElementById("canvas");
         var count = c.getContext("2d");
         count.fillStyle = "deepskyblue";
@@ -71,7 +72,6 @@ app = (function () {
         var d = document.getElementById("canvas");
         var dtx = d.getContext("2d");
         var sumPosition = 0;
-        console.log(seats);
         for (var x = 0; x < seats[0].length; x++) {
             for (var y = 0; y < seats.length; y++) {
                 if(seats[y][x] == false){

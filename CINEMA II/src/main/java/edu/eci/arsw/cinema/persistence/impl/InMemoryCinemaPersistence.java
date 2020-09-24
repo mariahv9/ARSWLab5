@@ -66,7 +66,7 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
 
             for (CinemaFunction function : c.getFunctions()) {
 
-                if (function.getDate().equals(date)) {
+                if (function.getDate().contains(date)) {
                     listc.add(function);
                 }
             }
